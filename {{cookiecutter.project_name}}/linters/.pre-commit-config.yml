@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        entry: ./.venv/bin/python -m isort
+        language: python
+        files: {{cookiecutter.project_name}}/backend/src/backend/

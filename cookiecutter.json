@@ -1,0 +1,8 @@
+{
+  "full_name": "Bingus",
+  "email": "bingus@bongus",
+  "project_name": "mystack",
+  "project_short_description": "Some description",
+  "first_version": "0.1.0",
+  "_copy_without_render": ["*.vue", ".github/*"]
+}

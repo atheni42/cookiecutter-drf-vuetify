@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{cookiecutter.project_name}}"
+version = "0.1.0"
+dependencies = [
+  "asgiref==3.10.0",
+  "black==25.9.0",
+  "certifi==2025.10.5",
+  "charset-normalizer==3.4.4",
+  "click==8.3.0",
+  "Django==5.2.8",
+  "django-filter==25.2",
+  "django-rest-knox==5.0.2",
+  "djangorestframework==3.16.1",
+  "dynaconf==3.2.12",
+  "flake8==7.3.0",
+  "gunicorn==23.0.0",
+  "hvac==2.4.0",
+  "idna==3.11",
+  "isort==7.0.0",
+  "loguru==0.7.3",
+  "Markdown==3.10",
+  "mccabe==0.7.0",
+  "mypy_extensions==1.1.0",
+  "packaging==25.0",
+  "pathspec==0.12.1",
+  "platformdirs==4.5.0",
+  "psycopg2-binary==2.9.11",
+  "pycodestyle==2.14.0",
+  "pyflakes==3.4.0",
+  "pytokens==0.3.0",
+  "python-dotenv==1.2.1",
+  "requests==2.32.5",
+  "shortuuid==1.0.13",
+  "sqlparse==0.5.3",
+  "urllib3==2.5.0",
+  "validators==0.35.0",
+]
+requires-python = ">=3.12"
+authors = [{ name = "Atheni", email = "dont@contact.edu.au" }]
+description = ""
+readme = "README.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backend/"]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
